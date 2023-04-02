@@ -1,0 +1,6 @@
+# DOM : Document Object Moducle.
+1. Javascript has its two strong points one is DOM na dsecond is Events.
+2. DOM is a part of HTML which also called root tag.
+3. All elements, attributes, id, class are called nodes in DOM.
+4. With the help of DOM tree or DOM you can either set or gte the value NODES.
+5. You can also add or delete previous elements with the help of Dom. 
