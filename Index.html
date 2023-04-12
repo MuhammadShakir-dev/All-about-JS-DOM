@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <!--Font Awesome Link-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            background-color: black;
+            font-family: monospace;
+            overflow: hidden
+        }
+
+        .container {
+            width: 80%;
+            height: 100vh;
+            display: grid;
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            margin: 0px auto;
+            grid-template-columns: 900px auto;
+            grid-template-rows: 100px 70px 500px 50px;
+        }
+
+        .logo {
+            background-color: black;
+            grid-column: 1 / span 2;
+            grid-row: 1 / 2;
+            color: white;
+            display: grid;
+        }
+
+        .logo h2 {
+            align-self: center;
+            justify-self: center;
+            font-size: 40px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .navbar {
+            grid-column: 1 /span 2;
+            grid-row: 2 / 3;
+            background-color: rgb(35, 35, 35);
+            display: grid;
+        }
+
+        .navbar ul {
+            display: inline-block;
+            margin: 0px auto;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            transition: all 0.2s ease;
+        }
+
+        .navbar ul li:hover {
+            border: 1px solid white;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+
+        .maincontent {
+            grid-column: 1 / 2;
+            grid-row: 3 / 5;
+            background-color: black;
+            display: grid;
+        }
+
+        .maincontent h1 {
+            color: white;
+            margin: 18px 0px 0px 30px;
+            align-self: flex-start;
+            justify-self: start;
+            font-weight: 500;
+            position: relative;
+            top:40px;
+        }
+        .maincontent p{
+            display: block;
+            width: 600px;
+            color: white;
+            align-self: flex-start;
+            margin: 0px 0px 0px 30px;
+            position: relative;
+            top: 0px;
+            font-size: 15px;
+        }
+        .maincontent h2{
+            color: white;
+            position: relative;
+            display: block;
+            margin: 0px 0px 0px 30px;
+            top:-10px;
+            font-weight: 500;
+        }
+        .innerdiv{
+            width: 300px;
+            height: 50px;
+            margin: 0%;
+            position: relative;
+            top:-80px;
+            cursor: pointer;
+        }
+
+        .fa-github{
+            color: white;
+            margin: 0px 0px 0px 30px;
+            display: inline-block;
+            font-size: 35px;
+            transition: all 0.5s ease;
+        }
+        .fa-github:hover{
+            transform: rotate(360deg);
+        }
+        .fa-linkedin-in{
+            color: white;
+            margin: 0px 0px 0px 30px;
+            display: inline-block;
+            font-size: 35px;
+            transition: all 0.5s ease;
+        }
+        .fa-linkedin-in:hover{
+            transform: rotate(360deg);
+        }
+        .fa-envelope-open{
+            color: white;
+            margin: 0px 0px 0px 30px;
+            display: inline-block;
+            font-size: 35px;
+            transition: all 0.5s ease;
+        }
+        .fa-envelope-open:hover{
+            transform: rotate(360deg);
+        }
+        .fa-instagram{
+            color: white;
+            margin: 0px 0px 0px 30px;
+            display: inline-block;
+            font-size: 35px;
+            transition: all 0.5s ease;
+        }
+        .fa-instagram:hover{
+            transform: rotate(360deg);
+        }
+
+        .sidebar{
+            grid-column: 2/3;
+            grid-row: 3/5;
+            background-color:black;
+            display: grid;
+        }
+        .sidebar ul{
+            align-self: flex-start;
+            justify-self: center;
+            position: relative;
+            top:50px;
+        }
+        .sidebar ul li{
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+        .sidebar ul li:hover{
+            color:yellow;
+        }
+
+        .footer{
+            grid-column: 1 / span 2;
+            background-color: rgb(35, 35, 35) ;
+            grid-row: 5 / 6;
+            display: grid;
+        }
+        .footer p {
+            color: lightgray;
+            font-size: 15px;
+            text-align: center;
+            align-self: center;
+            justify-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <h2>DEV---s</h2>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Solutions</li>
+                <li>Contact</li>
+                <li>Career</li>
+            </ul>
+        </div>
+
+        <div class="maincontent">
+            <h1>Hello Developers👋</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti delectus officiis fuga, quaerat
+                tempora totam doloribus cum tenetur atque incidunt dolor? Molestias ab placeat in quae architecto facere
+                consequuntur?
+            </p>
+            <h2>Connect with us.</h2>
+            <div class="innerdiv">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-regular fa-envelope-open"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>Full-Stack Developer</li>
+                <li>Back-end Developer</li>
+                <li>Front-end Developer</li>
+                <li>Mern Stack Developer</li>
+                <li>Mean Stack Developer</li>
+                <li>UI/UX Designer</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>Created by : Muhammad Shakir-dev</p>
+        </div>
+    </div>
+</body>
+
+</html>
