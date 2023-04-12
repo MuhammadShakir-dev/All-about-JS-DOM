@@ -15,3 +15,16 @@
   elements = document.title;
   // title is used to print the text inside you title tag.
   console.log(elements);  
+
+
+  elements = document.forms;
+  // used to target all the forms present in you html document.
+  
+  elements = document.doctype;
+  // used to you identify which doctype were used in the html document.
+  
+ elements = document.URL;
+ // simply return the URL of your website.
+ 
+ elements = document.domain;
+ // gives  the domain name of your website
