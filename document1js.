@@ -1,0 +1,17 @@
+  let elements;
+  elements = document.head;
+  // head simply prints the head tag of your html page.
+  console.log(elements); 
+  
+  
+  elements = document.body;
+  // body simply prints the body of your html page.
+  console.log(elements)
+
+  elements = document.links;
+  // links is used to find that how many anchor tag used in you html page.
+  console.log(elements);
+
+  elements = document.title;
+  // title is used to print the text inside you title tag.
+  console.log(elements);  
