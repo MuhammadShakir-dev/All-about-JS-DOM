@@ -3,3 +3,10 @@
  
 let x = document.getElementById("maincontent").innerText;
 console.log(x);
+
+
+//show you all the HTML that is present in your id.
+// should only be used with ID not with class.
+
+let x = document.getElementById("maincontent").innerHTML;
+console.log(x);
