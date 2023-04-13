@@ -1,0 +1,5 @@
+//show you all the text that is present in your html tag.
+// should only be used with ID not with class.
+ 
+let x = document.getElementById("maincontent").innerText;
+console.log(x);
