@@ -10,3 +10,12 @@ console.log(x);
 
 let x = document.getElementById("maincontent").innerHTML;
 console.log(x);
+
+
+// get attribute shows you the value of your attribute that is used in any id.
+// let's take and example.
+// in getAttribute you have to pass the attribute name you want the value of.
+
+let attrValue = document.getElementById("maincontent").getAttribute("class");
+console.log(attrValue); 
+
