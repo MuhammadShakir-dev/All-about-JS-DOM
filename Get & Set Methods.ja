@@ -19,3 +19,8 @@ console.log(x);
 let attrValue = document.getElementById("maincontent").getAttribute("class");
 console.log(attrValue); 
 
+// getAttributeNode prints the value both attribute and there value as well.
+// let's take an example.
+
+let nodeAttr = document.getElementById("maincontent").getAttributeNode("class");
+console.log(nodeAttr); 
