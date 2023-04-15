@@ -24,3 +24,13 @@ console.log(attrValue);
 
 let nodeAttr = document.getElementById("maincontent").getAttributeNode("class");
 console.log(nodeAttr); 
+
+
+// attributes prints all the attribute that is used inside a tag in the form of an array.
+// you can print any attribute value and name by using .value and .name method.
+
+let attr = document.getElementById("maincontent").attributes;
+console.log(attr); 
+// now if i wanna see any specific attribute value or name then i will use.
+let attr1 = document.getElementById("maincontent").attributes[2].value;
+console.log(attr1); 
