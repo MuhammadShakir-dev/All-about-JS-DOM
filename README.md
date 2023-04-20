@@ -6,7 +6,11 @@ The Document Object Model (DOM) is a programming interface for
 web documents.  It represents the page so that programs can 
 change the document structure, style, and content. 
 The DOM represents the document as nodes and objects; that way, 
-programming languages can interact with the page.
+programming languages can interact with the page. The DOM represents the document as a tree of nodes and objects, 
+where each node represents a part of the document, such as an element, attribute, or text node. 
+The nodes are organized in a hierarchical structure,
+with the document node at the top, followed by the HTML element, and
+then the child nodes that represent the content of the page.
 
 ## Course Outline.
 1. JS DOM Targeting Methods
